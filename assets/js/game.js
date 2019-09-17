@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     initWrite();
 
-    $('#buttons>button').on('click', function() {
+    $('.crystal').on('click', function () {
         buttonSound($(this).data("index"));
         userScore += adders[$(this).data("index")];
         $('#user-score').text(userScore);
@@ -16,19 +16,11 @@ $(document).ready(function () {
 
     function checkWinState(score) {
         if (score == target) {
-            // $('#user-score:last-child').detach();
-            let winMsg = $('<div>');
-            winMsg.addClass('display-3 col-8');
-            winMsg.text('You Win!')
-            $('#score-win').append(winMsg);
+            $('#user-wins').text('You Won!');
             wins++;
             reset();
         } else if (score > target) {
-            // $('#score-win:last-child').detach();
-            let winMsg = $('<div>');
-            winMsg.addClass('display-3 col-8');
-            winMsg.text('You Lost!')
-            $('#score-win').append(winMsg);
+            $('#user-wins').text('You Lost!');
             losses++;
             reset();
         }
@@ -43,7 +35,8 @@ $(document).ready(function () {
 
     function initWrite() {
         $('#target').text(target);
-        $('#wins').text(`Wins: ${wins} Losses: ${losses}`);
+        $('#wins').text(wins);
+        $('#losses').text(losses)
         $('#user-score').text(userScore);
     }
 
@@ -62,7 +55,6 @@ $(document).ready(function () {
 
     function buttonSound(index) {
         let sound = new Audio(`assets/audio/sound${index}.wav`);
-        // console.log(sound);
         sound.volume = 0.5;
         sound.play();
     }

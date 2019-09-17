@@ -1,0 +1,31 @@
+img {
+    border-radius: 50%;
+}
+
+.card{
+    background-color: #fde4e4;
+    border: #fdd0d0 solid 5px;
+}
+.card-title {
+    text-emphasis: bold;
+    font-size: 24px;
+}
+
+#instructions>.card{
+    background-color: #ffffff;
+    border: 0px;
+}
+
+button{
+    float: left;
+    border-radius: 50%;
+    max-width: 20vw;
+}
+
+button:focus{
+    border-radius: 50%;
+}
+
+#user-wins :empty{
+    display: none;
+}
