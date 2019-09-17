@@ -19,7 +19,6 @@ img {
 button{
     float: left;
     border-radius: 50%;
-    max-width: 20vw;
 }
 
 button:focus{

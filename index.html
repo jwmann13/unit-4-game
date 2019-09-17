@@ -12,45 +12,45 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-    <title>Document</title>
+    <title>Crystal Game</title>
 </head>
 
 <body id="body">
 
     <div class="container">
         <div class="row d-flex justify-content-center m-2" id="instructions">
-            <div class="card col-6 text-center p-0">
+            <div class="card col-12 col-md-6 text-center p-0">
                 <div class="card-title">Instructions</div>
                 <p class="lead mx-4">Each button has a random number that you'll add to your score. Make
                     your score add up to the target number shown above. If you go over, you lose!</p>
             </div>
         </div>
-        <div class="row d-flex justify-content-around m-2">
-            <div class="card col-3 text-center p-0">
-                <div class="card-body">
+        <div class="row d-flex justify-content-between my-2">
+            <div class="card col-12 col-md-3 text-center">
+                <div class="card-body p-0">
                     <div class="card-title">Target Number</div>
-                    <div class="display-3" id="target"></div>
+                    <div class="display-4" id="target"></div>
                 </div>
             </div>
-            <div class="card col-2 text-center p-0">
-                <div class="card-body">
+            <div class="card col-6 col-md-2 text-center">
+                <div class="card-body p-0">
                     <div class="card-title">Wins</div>
                     <div class="display-4" id="wins"></div>
                 </div>
             </div>
-            <div class="card col-2 text-center p-0">
-                <div class="card-body">
+            <div class="card col-6 col-md-2 text-center">
+                <div class="card-body p-0">
                     <div class="card-title">Losses</div>
                     <div class="display-4" id="losses"></div>
                 </div>
             </div>
         </div>
         <div class="row" id="buttons">
-            <div class="card col-4 text-center">
+            <div class="card col-12 col-md-4 text-center">
                 <div class="card-title">Your Score</div>
                 <div class="display-3" id="user-score"></div>
             </div>
-            <div class="btn-group col-8">
+            <div class="btn-group col-12 col-md-8">
                 <button type="button" class="btn crystal" data-index="0">
                     <img src="assets/images/crystal0.jpeg" alt="Crystal 1" class="img-responsive h-auto"
                         style="width: 100%">
@@ -87,7 +87,7 @@
                 </a>
             </p> -->
         </div>
-        <div class="row d-flex justify-content-around" id="score-wins">
+        <div class="row d-flex justify-content-center" id="score-wins">
             <div class="card col-6 text-center">
                 <div class="display-3" id="user-wins"></div>
             </div>
